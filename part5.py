@@ -21,5 +21,22 @@ Enter a month:  February
 Enter a month:  Saturday
 not a month
 '''
+##
+month = input("Enter a month : ")
+def leap_year(x):
+  if int(x) % 4 == 0:
+    return 29
+  else: 
+    return 28
+thirty_day_months = ['april','june', 'september','november']
+thirtyone_day_months = ['january', 'march', 'may', 'july', 'august','october', 'december']
+if month.lower() in thirty_day_months:
+  print("30")
+elif month.lower() in thirtyone_day_months:
+  print('31')
+elif month.lower() == 'february':
+  year = input("Enter a year: ")
+  print(leap_year(year))
+else:
+  print('not a month')
 
-#start writing your code below
