@@ -16,6 +16,5 @@ if num1 == num2 == num3:
 
 if num1 == num2 or num2 == num3 or num1 == num3:
   print("Exactly two of the numbers are equal.")
-
-else
+else:
   print("None of the numbers are equal.")
